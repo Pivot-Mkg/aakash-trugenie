@@ -262,7 +262,8 @@
 
     const progressPct = (lifecycleIndex / (lifecycleTotal - 1)) * 100;
     if (lifecycleProgressDesktop) {
-      lifecycleProgressDesktop.style.width = `${progressPct}%`;
+      // Line spans 12.5% -> 87.5% of the container (75% total).
+      lifecycleProgressDesktop.style.width = `${progressPct * 0.75}%`;
     }
     if (lifecycleProgressMobile) {
       lifecycleProgressMobile.style.height = `${progressPct}%`;
@@ -601,7 +602,7 @@
     const label = document.createElement("p");
     label.className =
       "text-[10px] font-bold text-navy/30 uppercase tracking-[0.2em] mb-4";
-    label.textContent = "Key Capabilities";
+    // label.textContent = "Key Capabilities";
     servicesList.appendChild(label);
 
     services.forEach((cap, idx) => {

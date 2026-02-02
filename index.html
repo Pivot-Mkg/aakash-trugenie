@@ -186,7 +186,7 @@
                 Started</button>
             </div>
 
-            <div class="flex items-center gap-4 pt-6">
+            <div class="flex items-center gap-4 pt-6" style="margin-top: 0;">
               <div class="flex -space-x-2">
                 <div
                   class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-gray-50 overflow-hidden flex items-center justify-center transition-transform hover:scale-110 hover:z-20 shadow-sm">
@@ -447,7 +447,7 @@
         </div>
 
         <div class="bg-white rounded-[2.5rem] p-8 lg:p-12 border border-pastel-navy relative overflow-hidden">
-          <div class="mb-16 relative z-10">
+          <div class="mb-16 relative z-10 text-center">
             <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-navy mb-2">The Lifecycle Journey</h2>
             <p class="text-gray-500 font-medium text-sm md:text-base">Our comprehensive approach to investment lifecycle
               management.</p>
@@ -455,12 +455,13 @@
 
           <div class="relative w-full" id="lifecycle">
             <div class="hidden md:block">
-              <div class="absolute top-[20px] left-0 w-full h-[2px] bg-pastel-orange rounded-full z-0"></div>
+              <div class="absolute top-[20px] h-[2px] bg-pastel-orange rounded-full z-0"
+                style="left: 12.5%; width: 75%;"></div>
               <div id="lifecycle-progress-desktop"
-                class="absolute top-[20px] left-0 h-[2px] bg-primary rounded-full z-0 transition-all duration-1000 ease-in-out"
-                style="width: 0%"></div>
+                class="absolute top-[20px] h-[2px] bg-primary rounded-full z-0 transition-all duration-1000 ease-in-out"
+                style="left: 12.5%; width: 0%"></div>
 
-              <div class="grid grid-cols-5 gap-4 relative z-10">
+              <div class="grid grid-cols-4 gap-4 relative z-10">
                 <div class="flex flex-col items-center text-center group select-none" data-lifecycle-step="0"
                   data-lifecycle-mode="desktop">
                   <div
@@ -500,19 +501,6 @@
                     class="text-sm font-medium leading-relaxed max-w-[160px] transition-colors duration-500 text-gray-400">
                     Revenue stream optimization</p>
                 </div>
-                <!-- <div class="flex flex-col items-center text-center group select-none" data-lifecycle-step="3"
-                  data-lifecycle-mode="desktop">
-                  <div
-                    class="relative flex items-center justify-center w-10 h-10 rounded-full mb-6 ring-8 ring-white transition-all duration-700 bg-white border-2 border-pastel-orange scale-100">
-                    <span class="material-icons-outlined text-white text-[20px] hidden lifecycle-check">check</span>
-                    <span class="w-2.5 h-2.5 bg-white rounded-full hidden lifecycle-active-dot"></span>
-                    <span class="w-2.5 h-2.5 bg-pastel-orange rounded-full lifecycle-inactive-dot"></span>
-                  </div>
-                  <h4 class="text-lg font-bold mb-1 transition-colors duration-500 text-navy">Operate</h4>
-                  <p
-                    class="text-sm font-medium leading-relaxed max-w-[160px] transition-colors duration-500 text-gray-400">
-                    World-class asset management</p>
-                </div> -->
                 <div class="flex flex-col items-center text-center group select-none" data-lifecycle-step="3"
                   data-lifecycle-mode="desktop">
                   <div
@@ -580,20 +568,6 @@
                       stream optimization</p>
                   </div>
                 </div>
-                <!-- <div class="flex items-start gap-8 group select-none" data-lifecycle-step="3"
-                  data-lifecycle-mode="mobile">
-                  <div
-                    class="flex-shrink-0 relative flex items-center justify-center w-10 h-10 rounded-full ring-8 ring-white transition-all duration-700 bg-white border-2 border-pastel-orange scale-100">
-                    <span class="material-icons-outlined text-white text-[20px] hidden lifecycle-check">check</span>
-                    <span class="w-2.5 h-2.5 bg-white rounded-full hidden lifecycle-active-dot"></span>
-                    <span class="w-2.5 h-2.5 bg-pastel-orange rounded-full lifecycle-inactive-dot"></span>
-                  </div>
-                  <div class="flex flex-col pt-0.5">
-                    <h4 class="text-lg font-bold mb-1 transition-colors duration-500 text-navy">Operate</h4>
-                    <p class="text-sm font-medium leading-relaxed transition-colors duration-500 text-gray-400">
-                      World-class asset management</p>
-                  </div>
-                </div> -->
                 <div class="flex items-start gap-8 group select-none" data-lifecycle-step="3"
                   data-lifecycle-mode="mobile">
                   <div
@@ -612,608 +586,603 @@
             </div>
           </div>
         </div>
-      </section>
+  </div>
+  </section>
 
-      <section class="py-16 bg-[#F8F6F5] overflow-hidden">
-        <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
-          <div class="text-center mb-12">
-            <span class="text-primary text-[10px] font-bold uppercase tracking-[0.2em]">Global Expertise</span>
-            <h2 class="mt-4 text-[36px] md:text-[36px] font-bold text-navy">Who We Serve</h2>
-            <p class="mt-5 text-gray-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed font-medium px-4">
-              Institutional-grade asset management tailored for the key stakeholders in the global real estate
-              ecosystem.</p>
+  <section class="py-16 bg-[#F8F6F5] overflow-hidden">
+    <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+      <div class="text-center mb-12">
+        <span class="text-primary text-[10px] font-bold uppercase tracking-[0.2em]">Global Expertise</span>
+        <h2 class="mt-4 text-[36px] md:text-[36px] font-bold text-navy">Who We Serve</h2>
+        <p class="mt-5 text-gray-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed font-medium px-4">
+          Institutional-grade asset management tailored for the key stakeholders in the global real estate
+          ecosystem.</p>
+      </div>
+
+      <div class="relative pt-6 pb-4">
+        <div
+          class="flex md:grid md:grid-cols-3 gap-6 lg:gap-12 mb-20 overflow-x-auto md:overflow-visible no-scrollbar snap-x snap-mandatory px-4 md:px-0">
+          <div
+            class="flex-shrink-0 w-[calc(100%-48px)] md:w-full snap-center md:snap-align-none flex flex-col p-8 rounded-2xl border border-gray-100 border-t-4 border-t-navy shadow-sm bg-white hover:-translate-y-2 transition-transform duration-300">
+            <div class="mb-6">
+              <div
+                class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pastel-navy/50 text-navy shadow-sm">
+                <span class="material-icons-outlined text-2xl">domain</span>
+              </div>
+            </div>
+            <h3 class="text-lg font-bold text-navy mb-3">Developers</h3>
+            <p class="text-gray-500 leading-relaxed text-[13px] mb-8 font-medium">Maximizing asset value through
+              strategic lifecycle management and rigorous operational excellence from groundbreaking to exit.</p>
+            <ul class="space-y-4 text-gray-600 mb-8 flex-grow font-medium text-[13px]">
+              <li class="flex items-start gap-3 leading-relaxed"><span
+                  class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Full
+                  lifecycle asset oversight</span></li>
+              <li class="flex items-start gap-3 leading-relaxed"><span
+                  class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Operational
+                  efficiency audits</span></li>
+              <li class="flex items-start gap-3 leading-relaxed"><span
+                  class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Exit
+                  strategy optimization</span></li>
+            </ul>
+            <a href="#"
+              class="inline-flex items-center gap-2 text-navy font-bold group mt-auto text-xs uppercase tracking-widest">Learn
+              More<span
+                class="material-icons-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></a>
           </div>
 
-          <div class="relative pt-6 pb-4">
-            <div
-              class="flex md:grid md:grid-cols-3 gap-6 lg:gap-12 mb-20 overflow-x-auto md:overflow-visible no-scrollbar snap-x snap-mandatory px-4 md:px-0">
+          <div
+            class="flex-shrink-0 w-[calc(100%-48px)] md:w-full snap-center md:snap-align-none flex flex-col p-8 rounded-2xl border border-gray-100 border-t-4 border-t-navy shadow-sm bg-white hover:-translate-y-2 transition-transform duration-300">
+            <div class="mb-6">
               <div
-                class="flex-shrink-0 w-[calc(100%-48px)] md:w-full snap-center md:snap-align-none flex flex-col p-8 rounded-2xl border border-gray-100 border-t-4 border-t-navy shadow-sm bg-white hover:-translate-y-2 transition-transform duration-300">
-                <div class="mb-6">
-                  <div
-                    class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pastel-navy/50 text-navy shadow-sm">
-                    <span class="material-icons-outlined text-2xl">domain</span>
-                  </div>
-                </div>
-                <h3 class="text-lg font-bold text-navy mb-3">Developers</h3>
-                <p class="text-gray-500 leading-relaxed text-[13px] mb-8 font-medium">Maximizing asset value through
-                  strategic lifecycle management and rigorous operational excellence from groundbreaking to exit.</p>
-                <ul class="space-y-4 text-gray-600 mb-8 flex-grow font-medium text-[13px]">
-                  <li class="flex items-start gap-3 leading-relaxed"><span
-                      class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Full
-                      lifecycle asset oversight</span></li>
-                  <li class="flex items-start gap-3 leading-relaxed"><span
-                      class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Operational
-                      efficiency audits</span></li>
-                  <li class="flex items-start gap-3 leading-relaxed"><span
-                      class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Exit
-                      strategy optimization</span></li>
-                </ul>
-                <a href="#"
-                  class="inline-flex items-center gap-2 text-navy font-bold group mt-auto text-xs uppercase tracking-widest">Learn
-                  More<span
-                    class="material-icons-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></a>
+                class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pastel-navy/50 text-navy shadow-sm">
+                <span class="material-icons-outlined text-2xl">account_balance</span>
               </div>
-
-              <div
-                class="flex-shrink-0 w-[calc(100%-48px)] md:w-full snap-center md:snap-align-none flex flex-col p-8 rounded-2xl border border-gray-100 border-t-4 border-t-navy shadow-sm bg-white hover:-translate-y-2 transition-transform duration-300">
-                <div class="mb-6">
-                  <div
-                    class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pastel-navy/50 text-navy shadow-sm">
-                    <span class="material-icons-outlined text-2xl">account_balance</span>
-                  </div>
-                </div>
-                <h3 class="text-lg font-bold text-navy mb-3">Lenders</h3>
-                <p class="text-gray-500 leading-relaxed text-[13px] mb-8 font-medium">Mitigating risk with
-                  institutional-grade reporting, real-time portfolio health monitoring, and proactive covenant tracking.
-                </p>
-                <ul class="space-y-4 text-gray-600 mb-8 flex-grow font-medium text-[13px]">
-                  <li class="flex items-start gap-3 leading-relaxed"><span
-                      class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Real-time
-                      risk monitoring</span></li>
-                  <li class="flex items-start gap-3 leading-relaxed"><span
-                      class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Automated
-                      compliance reporting</span></li>
-                  <li class="flex items-start gap-3 leading-relaxed"><span
-                      class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Distressed
-                      asset recovery</span></li>
-                </ul>
-                <a href="#"
-                  class="inline-flex items-center gap-2 text-navy font-bold group mt-auto text-xs uppercase tracking-widest">Learn
-                  More<span
-                    class="material-icons-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></a>
-              </div>
-
-              <div
-                class="flex-shrink-0 w-[calc(100%-48px)] md:w-full snap-center md:snap-align-none flex flex-col p-8 rounded-2xl border border-gray-100 border-t-4 border-t-navy shadow-sm bg-white hover:-translate-y-2 transition-transform duration-300">
-                <div class="mb-6">
-                  <div
-                    class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pastel-navy/50 text-navy shadow-sm">
-                    <span class="material-icons-outlined text-2xl">insights</span>
-                  </div>
-                </div>
-                <h3 class="text-lg font-bold text-navy mb-3">Funds &amp; Investors</h3>
-                <p class="text-gray-500 leading-relaxed text-[13px] mb-8 font-medium">Driving portfolio performance
-                  through data-driven transparency, deep market insights, and optimized capital allocation.</p>
-                <ul class="space-y-4 text-gray-600 mb-8 flex-grow font-medium text-[13px]">
-                  <li class="flex items-start gap-3 leading-relaxed"><span
-                      class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Portfolio-wide
-                      analytics</span></li>
-                  <li class="flex items-start gap-3 leading-relaxed"><span
-                      class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Yield
-                      enhancement strategies</span></li>
-                  <li class="flex items-start gap-3 leading-relaxed"><span
-                      class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>ESG
-                      performance tracking</span></li>
-                </ul>
-                <a href="#"
-                  class="inline-flex items-center gap-2 text-navy font-bold group mt-auto text-xs uppercase tracking-widest">Learn
-                  More<span
-                    class="material-icons-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></a>
-              </div>
-              <div class="md:hidden flex-shrink-0 w-8"></div>
             </div>
+            <h3 class="text-lg font-bold text-navy mb-3">Lenders</h3>
+            <p class="text-gray-500 leading-relaxed text-[13px] mb-8 font-medium">Mitigating risk with
+              institutional-grade reporting, real-time portfolio health monitoring, and proactive covenant tracking.
+            </p>
+            <ul class="space-y-4 text-gray-600 mb-8 flex-grow font-medium text-[13px]">
+              <li class="flex items-start gap-3 leading-relaxed"><span
+                  class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Real-time
+                  risk monitoring</span></li>
+              <li class="flex items-start gap-3 leading-relaxed"><span
+                  class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Automated
+                  compliance reporting</span></li>
+              <li class="flex items-start gap-3 leading-relaxed"><span
+                  class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Distressed
+                  asset recovery</span></li>
+            </ul>
+            <a href="#"
+              class="inline-flex items-center gap-2 text-navy font-bold group mt-auto text-xs uppercase tracking-widest">Learn
+              More<span
+                class="material-icons-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></a>
           </div>
 
-          <div class="relative overflow-hidden rounded-[2.5rem] bg-pastel-navy p-8 lg:p-14">
-            <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
-              <svg class="h-full w-full" viewBox="0 0 100 100">
-                <circle cx="100" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.5"></circle>
-                <circle cx="100" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="0.5"></circle>
-                <circle cx="100" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="0.5"></circle>
-              </svg>
+          <div
+            class="flex-shrink-0 w-[calc(100%-48px)] md:w-full snap-center md:snap-align-none flex flex-col p-8 rounded-2xl border border-gray-100 border-t-4 border-t-navy shadow-sm bg-white hover:-translate-y-2 transition-transform duration-300">
+            <div class="mb-6">
+              <div
+                class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-pastel-navy/50 text-navy shadow-sm">
+                <span class="material-icons-outlined text-2xl">insights</span>
+              </div>
             </div>
+            <h3 class="text-lg font-bold text-navy mb-3">Funds &amp; Investors</h3>
+            <p class="text-gray-500 leading-relaxed text-[13px] mb-8 font-medium">Driving portfolio performance
+              through data-driven transparency, deep market insights, and optimized capital allocation.</p>
+            <ul class="space-y-4 text-gray-600 mb-8 flex-grow font-medium text-[13px]">
+              <li class="flex items-start gap-3 leading-relaxed"><span
+                  class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Portfolio-wide
+                  analytics</span></li>
+              <li class="flex items-start gap-3 leading-relaxed"><span
+                  class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>Yield
+                  enhancement strategies</span></li>
+              <li class="flex items-start gap-3 leading-relaxed"><span
+                  class="material-icons-outlined text-primary text-base mt-0.5">check_circle</span><span>ESG
+                  performance tracking</span></li>
+            </ul>
+            <a href="#"
+              class="inline-flex items-center gap-2 text-navy font-bold group mt-auto text-xs uppercase tracking-widest">Learn
+              More<span
+                class="material-icons-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></a>
+          </div>
+          <div class="md:hidden flex-shrink-0 w-8"></div>
+        </div>
+      </div>
 
-            <div class="relative z-10 flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
-              <div class="lg:w-5/12 space-y-6 text-center lg:text-left">
-                <!-- <div
+      <div class="relative overflow-hidden rounded-[2.5rem] bg-pastel-navy p-8 lg:p-14">
+        <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+          <svg class="h-full w-full" viewBox="0 0 100 100">
+            <circle cx="100" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.5"></circle>
+            <circle cx="100" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="0.5"></circle>
+            <circle cx="100" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="0.5"></circle>
+          </svg>
+        </div>
+
+        <div class="relative z-10 flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+          <div class="lg:w-5/12 space-y-6 text-center lg:text-left">
+            <!-- <div
                   class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white text-navy border border-navy/5 shadow-sm">
                   <span class="material-icons-outlined text-base text-primary">auto_awesome</span>
                   <span class="text-[10px] font-bold uppercase tracking-wider">The Synergy</span>
                 </div> -->
-                <h2 class="text-[24px] lg:text-[36px] font-bold text-navy leading-tight">The Hybrid Model:
-                  <br />Advisory + Platform
-                </h2>
-                <p class="text-navy/60 text-sm md:text-base leading-relaxed font-medium">Our synergy combines senior
-                  human expertise with cutting-edge proprietary technology.</p>
-                <div class="flex justify-center lg:justify-start pt-2">
-                  <button
-                    class="btn-primary bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-bold transition-all flex items-center gap-3 shadow-lg shadow-primary/20 transform hover:-translate-y-1 text-sm">
-                    <span>Discover More</span>
-                    <span class="material-icons-outlined text-lg">arrow_forward</span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="lg:w-7/12 w-full">
-                <div class="grid grid-cols-2 gap-4 md:gap-6">
-                  <div
-                    class="bg-white/80 backdrop-blur-md p-6 rounded-[2rem] border border-white/60 shadow-sm flex flex-col items-center text-center space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
-                      <span class="material-icons-outlined text-2xl">psychology</span>
-                    </div>
-                    <div>
-                      <h4 class="font-bold text-navy text-sm md:text-base leading-tight">Institutional Advisory</h4>
-                    </div>
-                  </div>
-                  <div
-                    class="bg-white/80 backdrop-blur-md p-6 rounded-[2rem] border border-white/60 shadow-sm flex flex-col items-center text-center space-y-4">
-                    <div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
-                      <span class="material-icons-outlined text-2xl">layers</span>
-                    </div>
-                    <div>
-                      <h4 class="font-bold text-navy text-sm md:text-base leading-tight">TruGenie Platform</h4>
-                    </div>
-                  </div>
-                  <div
-                    class="col-span-2 bg-navy p-5 rounded-[1.5rem] shadow-lg flex items-center justify-between gap-4 text-white">
-                    <div class="flex items-center gap-4">
-                      <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
-                        <span class="material-icons-outlined text-xl">hub</span>
-                      </div>
-                      <div class="text-left">
-                        <h4 class="font-bold text-sm mb-0.5">One Source of Truth</h4>
-                        <p class="text-[10px] text-white/60 font-medium uppercase tracking-widest">For All Stakeholders
-                        </p>
-                      </div>
-                    </div>
-                    <span class="material-icons-outlined text-white/40">arrow_forward</span>
-                  </div>
-                </div>
-              </div>
+            <h2 class="text-[24px] lg:text-[36px] font-bold text-navy leading-tight">The Hybrid Model:
+              <br />Advisory + Platform
+            </h2>
+            <p class="text-navy/60 text-sm md:text-base leading-relaxed font-medium">Our synergy combines senior
+              human expertise with cutting-edge proprietary technology.</p>
+            <div class="flex justify-center lg:justify-start pt-2">
+              <button
+                class="btn-primary bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-full font-bold transition-all flex items-center gap-3 shadow-lg shadow-primary/20 transform hover:-translate-y-1 text-sm">
+                <span>Discover More</span>
+                <span class="material-icons-outlined text-lg">arrow_forward</span>
+              </button>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="bg-white overflow-hidden">
-        <div class="max-w-[1600px] mx-auto pt-20 pb-10 px-6 lg:px-12">
-          <div class="flex flex-col items-center text-center">
-            <!-- <span class="text-primary font-bold tracking-[0.2em] text-[10px] uppercase mb-6">Our Ecosystem</span> -->
-            <h1 class="text-navy text-[36px] md:text-[36px] font-bold leading-[1.1] tracking-tight max-w-6xl">
-              Collaborating with Industry Leaders</h1>
-            <p class="text-navy/80 text-base md:text-xl font-normal leading-relaxed max-w-4xl mt-6">We partner with
-              global real estate developers, top-tier lenders, and institutional investors to ensure superior asset
-              performance.</p>
-          </div>
-        </div>
 
-        <section class="max-w-[1600px] mx-auto px-4 md:px-6 lg:px-12 pb-20 relative" id="collaborators">
-          <div class="flex items-center justify-center w-full mx-auto mb-16 relative px-2">
-            <button id="collab-left"
-              class="flex w-9 h-9 md:w-12 md:h-12 rounded-full border items-center justify-center transition-all flex-shrink-0 z-20 bg-white absolute left-0 md:relative md:mr-4 border-gray-100 text-gray-200 cursor-not-allowed opacity-0 invisible md:visible"
-              disabled>
-              <span class="material-icons-outlined text-sm md:text-base">arrow_back</span>
-            </button>
-
-            <div id="collab-tabs"
-              class="flex flex-nowrap overflow-x-auto no-scrollbar gap-3 md:gap-4 py-6 scroll-smooth flex-1 snap-x snap-mandatory mx-2 md:mx-0 md:justify-start"
-              style="scrollbar-width: none; ms-overflow-style: none"></div>
-
-            <button id="collab-right"
-              class="flex w-9 h-9 md:w-12 md:h-12 rounded-full border items-center justify-center transition-all flex-shrink-0 z-20 bg-white absolute right-0 md:relative md:ml-4 border-gray-100 text-gray-200 cursor-not-allowed opacity-0 invisible md:visible"
-              disabled>
-              <span class="material-icons-outlined text-sm md:text-base">arrow_forward</span>
-            </button>
-          </div>
-
-          <div class="animate-fade-in-up px-4 md:px-0">
-            <div class="text-center mb-16">
-              <h3 id="collab-title" class="text-xl md:text-3xl font-bold text-navy mb-4"></h3>
-              <p id="collab-desc" class="text-navy/70 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed font-medium">
-              </p>
-            </div>
-
-            <div id="collab-logos" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 items-center">
-            </div>
-          </div>
-        </section>
-
-        <section class="bg-pastel-orange/30 py-16 md:py-20 px-6 relative overflow-hidden" style="display: none;">
-          <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-          <div
-            class="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16 relative z-10">
-            <div class="max-w-xl text-left">
-              <h2 class="text-[36px] md:text-[36px] font-bold text-navy mb-6 leading-tight">Become a Strategic Partner
-              </h2>
-              <p class="text-navy/80 text-base md:text-lg mb-8 md:mb-10 leading-relaxed font-medium">We are always
-                looking for visionary organizations to expand our ecosystem. Leverage our asset management expertise.
-              </p>
-              <div class="flex flex-wrap gap-4">
-                <button
-                  class="btn-primary bg-primary hover:bg-primary-hover text-white font-bold py-4 px-8 md:px-10 rounded-full transition-all flex items-center gap-3 shadow-lg shadow-primary/20 transform hover:-translate-y-1 text-sm">
-                  <span>Partner with Us</span>
-                  <span class="material-icons-outlined text-base">arrow_forward</span>
-                </button>
-              </div>
-            </div>
-            <div
-              class="w-full md:w-[480px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 md:border-8 border-white transform hover:scale-[1.02] transition-transform duration-500">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_xLkf1IrNH8o8BLAMq6Tnuv9cjhRjgnrVqKLzv7PKycFL-jvgreEY4FEKAMIw5Zms1mBp8pAMw7E-gsHTV-Z2Pdi7740EbenlsvIlvHEeYYtnIqQNgmuqP_F3H0HarcvPxu2r2DDFYPpDAjkUd-wlelcANrVufPgVWl-qGuT6HcUorXc2RtgJa8sn4pJCSiPif_hTY0I5_ZgxzppxZSuAPRb4VXMoTuBzO2fz5bpjNOJD5ar7w6KisnT8YSOxUBN-ZSdjUGIo_rY"
-                alt="Partnership meeting" class="w-full h-full object-cover" />
-            </div>
-          </div>
-        </section>
-      </section>
-      <section class="py-16 bg-white overflow-hidden">
-        <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
-          <div class="text-center mb-12 space-y-4">
-            <h2 class="text-[36px] md:text-[36px] font-bold text-navy tracking-tight">TruGenie Product Stack</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base font-medium">Transforming real estate through
-              intelligent automation and real-time insights.</p>
-          </div>
-
-          <div class="relative max-w-[1100px] mx-auto group" id="product-stack">
-            <div
-              class="rounded-[2.5rem] overflow-hidden aspect-[16/9] md:aspect-[21/9] relative border border-gray-100 bg-navy shadow-lg shadow-navy/5">
-              <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-10"
-                data-slide="0">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2301"
-                  alt="Intelligent Diagnostic Tool for Assets" class="w-full h-full object-cover" />
-                <div
-                  class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-navy via-navy/60 to-transparent pointer-events-none">
-                </div>
-                <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
-                  <div class="flex items-center justify-between mb-4 md:mb-6">
-                    <div
-                      class="bg-primary px-6 md:px-8 py-2 md:py-2.5 rounded-full shadow-lg transform transition-all duration-700">
-                      <span class="text-white text-sm md:text-lg font-bold tracking-tight">TruGenie.AI</span>
-                    </div>
-                    <button
-                      class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"><span
-                        class="material-icons-outlined text-lg md:text-xl leading-none">arrow_forward</span></button>
-                  </div>
-                  <div class="transition-all duration-1000 translate-y-0 opacity-100">
-                    <h3
-                      class="text-[20px] md:text-[36px] font-bold text-white tracking-tight max-w-2xl leading-tight mb-2">
-                      Intelligent Diagnostic Tool for Assets</h3>
-                    <p class="text-white/70 text-xs md:text-sm font-medium max-w-xl hidden sm:block">AI-powered engine
-                      monitoring real estate health and operational costs automatically.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0" data-slide="1">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2301"
-                  alt="Automated Facility Management Suite" class="w-full h-full object-cover" />
-                <div
-                  class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-navy via-navy/60 to-transparent pointer-events-none">
-                </div>
-                <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
-                  <div class="flex items-center justify-between mb-4 md:mb-6">
-                    <div
-                      class="bg-primary px-6 md:px-8 py-2 md:py-2.5 rounded-full shadow-lg transform transition-all duration-700">
-                      <span class="text-white text-sm md:text-lg font-bold tracking-tight">SmartOps</span>
-                    </div>
-                    <button
-                      class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"><span
-                        class="material-icons-outlined text-lg md:text-xl leading-none">arrow_forward</span></button>
-                  </div>
-                  <div class="transition-all duration-1000 translate-y-6 opacity-0">
-                    <h3
-                      class="text-[20px] md:text-[36px] font-bold text-white tracking-tight max-w-2xl leading-tight mb-2">
-                      Automated Facility Management Suite</h3>
-                    <p class="text-white/70 text-xs md:text-sm font-medium max-w-xl hidden sm:block">Streamline building
-                      operations with real-time IoT integration and digital twins.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0" data-slide="2">
-                <img src="https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=2340"
-                  alt="Real-time ROI Performance Analytics" class="w-full h-full object-cover" />
-                <div
-                  class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-navy via-navy/60 to-transparent pointer-events-none">
-                </div>
-                <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
-                  <div class="flex items-center justify-between mb-4 md:mb-6">
-                    <div
-                      class="bg-primary px-6 md:px-8 py-2 md:py-2.5 rounded-full shadow-lg transform transition-all duration-700">
-                      <span class="text-white text-sm md:text-lg font-bold tracking-tight">FinanceHub</span>
-                    </div>
-                    <button
-                      class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"><span
-                        class="material-icons-outlined text-lg md:text-xl leading-none">arrow_forward</span></button>
-                  </div>
-                  <div class="transition-all duration-1000 translate-y-6 opacity-0">
-                    <h3
-                      class="text-[20px] md:text-[36px] font-bold text-white tracking-tight max-w-2xl leading-tight mb-2">
-                      Real-time ROI Performance Analytics</h3>
-                    <p class="text-white/70 text-xs md:text-sm font-medium max-w-xl hidden sm:block">Unparalleled
-                      visibility into cash flows and investment performance dashboards.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0" data-slide="3">
-                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2670"
-                  alt="Strategic Procurement Intelligence" class="w-full h-full object-cover" />
-                <div
-                  class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-navy via-navy/60 to-transparent pointer-events-none">
-                </div>
-                <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
-                  <div class="flex items-center justify-between mb-4 md:mb-6">
-                    <div
-                      class="bg-primary px-6 md:px-8 py-2 md:py-2.5 rounded-full shadow-lg transform transition-all duration-700">
-                      <span class="text-white text-sm md:text-lg font-bold tracking-tight">SupplyGenie</span>
-                    </div>
-                    <button
-                      class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"><span
-                        class="material-icons-outlined text-lg md:text-xl leading-none">arrow_forward</span></button>
-                  </div>
-                  <div class="transition-all duration-1000 translate-y-6 opacity-0">
-                    <h3
-                      class="text-[20px] md:text-[36px] font-bold text-white tracking-tight max-w-2xl leading-tight mb-2">
-                      Strategic Procurement Intelligence</h3>
-                    <p class="text-white/70 text-xs md:text-sm font-medium max-w-xl hidden sm:block">Transform supply
-                      chains with transparent vendor management and predictive sourcing.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <button id="product-prev"
-              class="hidden md:flex absolute -left-16 top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-white border border-gray-100 items-center justify-center text-navy hover:bg-primary hover:text-white transition-all shadow-md">
-              <span class="material-icons-outlined">arrow_back</span>
-            </button>
-
-            <button id="product-next"
-              class="hidden md:flex absolute -right-16 top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-white border border-gray-100 items-center justify-center text-navy hover:bg-primary hover:text-white transition-all shadow-md">
-              <span class="material-icons-outlined">arrow_forward</span>
-            </button>
-
-            <div class="mt-8 flex justify-center items-center gap-2" id="product-dots">
-              <button class="h-1.5 rounded-full transition-all duration-500 w-8 bg-primary" data-dot="0"
-                aria-label="Go to slide 1"></button>
-              <button class="h-1.5 rounded-full transition-all duration-500 w-2 bg-navy/10" data-dot="1"
-                aria-label="Go to slide 2"></button>
-              <button class="h-1.5 rounded-full transition-all duration-500 w-2 bg-navy/10" data-dot="2"
-                aria-label="Go to slide 3"></button>
-              <button class="h-1.5 rounded-full transition-all duration-500 w-2 bg-navy/10" data-dot="3"
-                aria-label="Go to slide 4"></button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="py-16 bg-white overflow-hidden" id="services">
-        <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
-          <div class="w-full text-center mb-16 space-y-4">
-            <h2 class="text-[36px] md:text-[36px] font-bold text-navy leading-tight tracking-tight">TruGenie -
-              Real Estate Intelligence Platform</h2>
-            <!-- <h3 class="text-xl md:text-2xl font-bold text-primary">Built for Decision-Makers</h3> -->
-            <p class="text-lg text-navy/60 leading-relaxed font-medium max-w-3xl mx-auto">TruGenie transforms raw
-              project data into actionable insights, helping you see issues before they become problems.</p>
-          </div>
-
-          <div class="flex flex-col lg:flex-row gap-12 items-stretch">
-            <div class="flex-1 flex flex-col justify-between space-y-4 order-2 lg:order-1">
-              <div class="space-y-3" id="services-list"></div>
-
-              <div class="pt-6">
-                <button
-                  class="btn-primary bg-primary hover:bg-primary-hover text-white font-bold py-5 px-10 rounded-full transition-all flex items-center justify-center gap-3 shadow-xl shadow-primary/20 transform hover:-translate-y-1 w-full sm:w-auto">
-                  <span>Book a TruGenie Demo</span>
-                  <span class="material-icons-outlined">calendar_today</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="flex-[1.3] order-1 lg:order-2">
-              <div class="relative h-full w-full rounded-[3rem] overflow-hidden shadow-2xl min-h-[500px]"
-                id="services-visual">
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent pointer-events-none">
-                </div>
-                <div class="absolute bottom-6 left-6 right-6 z-20 overflow-hidden" id="services-overlay"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-16 bg-white">
-        <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
-          <div class="text-center mb-16">
-            <h2 class="text-[36px] font-bold text-navy tracking-tight">Who We Work With</h2>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            <div
-              class="bg-white p-8 rounded-[2rem] border border-pastel-navy hover:border-primary/20 transition-all duration-300 text-center group cursor-default">
+          <div class="lg:w-7/12 w-full">
+            <div class="grid grid-cols-2 gap-4 md:gap-6">
               <div
-                class="w-12 h-12 bg-pastel-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors border border-primary/5">
-                <span
-                  class="material-icons-outlined text-primary group-hover:text-white transition-colors">domain</span>
+                class="bg-white/80 backdrop-blur-md p-6 rounded-[2rem] border border-white/60 shadow-sm flex flex-col items-center text-center space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                  <span class="material-icons-outlined text-2xl">psychology</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy text-sm md:text-base leading-tight">Institutional Advisory</h4>
+                </div>
               </div>
-              <h5 class="font-bold mb-4 text-navy text-sm lg:text-base tracking-tight">Asset Owners &amp; REITs</h5>
-              <p class="text-[11px] text-gray-500 leading-relaxed font-medium">Enhancing performance, uptime, and
-                portfolio value through data.</p>
-            </div>
-            <div
-              class="bg-white p-8 rounded-[2rem] border border-pastel-navy hover:border-primary/20 transition-all duration-300 text-center group cursor-default">
               <div
-                class="w-12 h-12 bg-pastel-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors border border-primary/5">
-                <span
-                  class="material-icons-outlined text-primary group-hover:text-white transition-colors">account_balance</span>
+                class="bg-white/80 backdrop-blur-md p-6 rounded-[2rem] border border-white/60 shadow-sm flex flex-col items-center text-center space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                  <span class="material-icons-outlined text-2xl">layers</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-navy text-sm md:text-base leading-tight">TruGenie Platform</h4>
+                </div>
               </div>
-              <h5 class="font-bold mb-4 text-navy text-sm lg:text-base tracking-tight">Lenders &amp; Investors</h5>
-              <p class="text-[11px] text-gray-500 leading-relaxed font-medium">Ensuring bankability, risk control, and
-                ROI through diligence.</p>
-            </div>
-            <div
-              class="bg-white p-8 rounded-[2rem] border border-pastel-navy hover:border-primary/20 transition-all duration-300 text-center group cursor-default">
               <div
-                class="w-12 h-12 bg-pastel-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors border border-primary/5">
-                <span
-                  class="material-icons-outlined text-primary group-hover:text-white transition-colors">engineering</span>
-              </div>
-              <h5 class="font-bold mb-4 text-navy text-sm lg:text-base tracking-tight">Developers &amp; EPCs</h5>
-              <p class="text-[11px] text-gray-500 leading-relaxed font-medium">Supporting project delivery through PMO
-                and procurement.</p>
-            </div>
-            <div
-              class="bg-white p-8 rounded-[2rem] border border-pastel-navy hover:border-primary/20 transition-all duration-300 text-center group cursor-default">
-              <div
-                class="w-12 h-12 bg-pastel-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors border border-primary/5">
-                <span
-                  class="material-icons-outlined text-primary group-hover:text-white transition-colors">settings_suggest</span>
-              </div>
-              <h5 class="font-bold mb-4 text-navy text-sm lg:text-base tracking-tight">O&amp;M Contractors</h5>
-              <p class="text-[11px] text-gray-500 leading-relaxed font-medium">Enabling better scheduling, automation,
-                and asset insights.</p>
-            </div>
-            <div
-              class="bg-white p-8 rounded-[2rem] border border-pastel-navy hover:border-primary/20 transition-all duration-300 text-center group cursor-default">
-              <div
-                class="w-12 h-12 bg-pastel-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors border border-primary/5">
-                <span class="material-icons-outlined text-primary group-hover:text-white transition-colors">hub</span>
-              </div>
-              <h5 class="font-bold mb-4 text-navy text-sm lg:text-base tracking-tight">OEMs &amp; Suppliers</h5>
-              <p class="text-[11px] text-gray-500 leading-relaxed font-medium">Streamlining procurement, compliance, and
-                logistics.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-20 bg-gray-50 relative overflow-hidden">
-        <div class="absolute inset-0 pointer-events-none opacity-[0.03]"
-          style="background-image: linear-gradient(to right, #001D56 1px, transparent 1px), linear-gradient(to bottom, #001D56 1px, transparent 1px); background-size: 60px 60px">
-        </div>
-        <div
-          class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#f9fafb_100%)] pointer-events-none opacity-80">
-        </div>
-
-        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
-          <h2 class="text-[36px] font-bold text-navy leading-[1.1] mb-8 tracking-tight">Ready to bring clarity and
-            control <br class="hidden lg:block" />to your real estate assets?</h2>
-          <p class="text-lg md:text-xl text-navy/60 font-medium max-w-2xl mx-auto mb-14 leading-relaxed">Connect with
-            our expert consultants today and discover how our platform can elevate your asset management strategy.</p>
-
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <button
-              class="btn-primary w-full sm:w-auto bg-primary hover:bg-primary-hover text-white font-bold text-xs md:text-sm tracking-[0.15em] uppercase px-10 py-5 transition-all hover:-translate-y-1 shadow-xl shadow-primary/20 rounded-full">Request
-              a Demo</button>
-            <button
-              class="btn-secondary w-full sm:w-auto bg-transparent border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold text-xs md:text-sm tracking-[0.15em] uppercase px-10 py-5 transition-all hover:-translate-y-1 rounded-full">Talk
-              to Services</button>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="bg-[#000B23] text-white pt-16 pb-8 border-t border-white/5 font-sans">
-      <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-8 mb-20">
-          <div class="lg:col-span-2 space-y-8 pr-8">
-            <div class="flex items-center">
-              <img src="https://truboardpartners.com/assests/img/trugenie.png" alt="TruGenie Logo"
-                class="h-10 w-auto object-contain brightness-0 invert" />
-            </div>
-
-            <p class="text-gray-400 text-sm leading-relaxed max-w-sm">Technology-led real estate asset intelligence and
-              execution partner. Transforming how India's leading stakeholders manage real estate investments.</p>
-
-            <div class="space-y-4 pt-2">
-              <div class="flex items-start gap-3 text-sm text-gray-300">
-                <span class="material-icons-outlined text-primary text-lg mt-0.5">place</span>
-                <span>Mumbai, Maharashtra, India</span>
-              </div>
-              <div class="flex items-center gap-3 text-sm text-gray-300">
-                <span class="material-icons-outlined text-primary text-lg">email</span>
-                <a href="mailto:info@truboard.com" class="hover:text-white transition-colors">info@truboard.com</a>
-              </div>
-              <div class="flex items-center gap-3 text-sm text-gray-300">
-                <span class="material-icons-outlined text-primary text-lg">phone</span>
-                <span>+91 22 XXXX XXXX</span>
+                class="col-span-2 bg-navy p-5 rounded-[1.5rem] shadow-lg flex items-center justify-between gap-4 text-white">
+                <div class="flex items-center gap-4">
+                  <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
+                    <span class="material-icons-outlined text-xl">hub</span>
+                  </div>
+                  <div class="text-left">
+                    <h4 class="font-bold text-sm mb-0.5">One Source of Truth</h4>
+                    <p class="text-[10px] text-white/60 font-medium uppercase tracking-widest">For All Stakeholders
+                    </p>
+                  </div>
+                </div>
+                <span class="material-icons-outlined text-white/40">arrow_forward</span>
               </div>
             </div>
-
-            <div class="flex gap-4 pt-4">
-              <a href="#"
-                class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-[#0077b5] transition-all duration-300 group"
-                aria-label="LinkedIn">
-                <svg class="w-5 h-5 fill-gray-400 group-hover:fill-white transition-colors" viewBox="0 0 24 24"
-                  aria-hidden="true">
-                  <path
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 21.466.792 22.24 1.771 22.24h20.451C23.2 22.24 24 21.466 24 20.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-              </a>
-              <a href="#"
-                class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-[#1877F2] transition-all duration-300 group"
-                aria-label="Facebook">
-                <svg class="w-5 h-5 fill-gray-400 group-hover:fill-white transition-colors" viewBox="0 0 24 24"
-                  aria-hidden="true">
-                  <path
-                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.954 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h4 class="font-bold text-lg mb-6 text-white">Services</h4>
-            <ul class="space-y-4 text-sm text-gray-400">
-              <li><a href="#" class="hover:text-primary transition-colors">Development &amp; Execution</a></li>
-              <li><a href="#" class="hover:text-primary transition-colors">Asset Management</a></li>
-              <li><a href="#" class="hover:text-primary transition-colors">Capital Oversight</a></li>
-              <li><a href="#" class="hover:text-primary transition-colors">TruGenie Platform</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="font-bold text-lg mb-6 text-white">Company</h4>
-            <ul class="space-y-4 text-sm text-gray-400">
-              <li><a href="#" class="hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#" class="hover:text-primary transition-colors">Leadership</a></li>
-              <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
-              <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="font-bold text-lg mb-6 text-white">Resources</h4>
-            <ul class="space-y-4 text-sm text-gray-400">
-              <li><a href="#" class="hover:text-primary transition-colors">Case Studies</a></li>
-              <li><a href="#" class="hover:text-primary transition-colors">Insights</a></li>
-              <li><a href="#" class="hover:text-primary transition-colors">Whitepapers</a></li>
-              <li><a href="#" class="hover:text-primary transition-colors">Product Updates</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-          <div>&copy; 2026 TruBoard PropTech. All rights reserved.</div>
-          <div class="flex gap-8">
-            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" class="hover:text-white transition-colors">Legal</a>
-            <a href="#" class="hover:text-white transition-colors">Security</a>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
+  <section class="bg-white overflow-hidden">
+    <div class="max-w-[1600px] mx-auto pt-20 pb-10 px-6 lg:px-12">
+      <div class="flex flex-col items-center text-center">
+        <!-- <span class="text-primary font-bold tracking-[0.2em] text-[10px] uppercase mb-6">Our Ecosystem</span> -->
+        <h1 class="text-navy text-[36px] md:text-[36px] font-bold leading-[1.1] tracking-tight max-w-6xl">
+          Collaborating with Industry Leaders</h1>
+        <p class="text-navy/80 text-base md:text-xl font-normal leading-relaxed max-w-4xl mt-6">We partner with
+          global real estate developers, top-tier lenders, and institutional investors to ensure superior asset
+          performance.</p>
+      </div>
+    </div>
+
+    <section class="max-w-[1600px] mx-auto px-4 md:px-6 lg:px-12 pb-20 relative" id="collaborators">
+      <div class="flex items-center justify-center w-full mx-auto mb-16 relative px-2">
+        <button id="collab-left"
+          class="flex w-9 h-9 md:w-12 md:h-12 rounded-full border items-center justify-center transition-all flex-shrink-0 z-20 bg-white absolute left-0 md:relative md:mr-4 border-gray-100 text-gray-200 cursor-not-allowed opacity-0 invisible md:visible"
+          disabled>
+          <span class="material-icons-outlined text-sm md:text-base">arrow_back</span>
+        </button>
+
+        <div id="collab-tabs"
+          class="flex flex-nowrap overflow-x-auto no-scrollbar gap-3 md:gap-4 py-6 scroll-smooth flex-1 snap-x snap-mandatory mx-2 md:mx-0 md:justify-start"
+          style="scrollbar-width: none; ms-overflow-style: none"></div>
+
+        <button id="collab-right"
+          class="flex w-9 h-9 md:w-12 md:h-12 rounded-full border items-center justify-center transition-all flex-shrink-0 z-20 bg-white absolute right-0 md:relative md:ml-4 border-gray-100 text-gray-200 cursor-not-allowed opacity-0 invisible md:visible"
+          disabled>
+          <span class="material-icons-outlined text-sm md:text-base">arrow_forward</span>
+        </button>
+      </div>
+
+      <div class="animate-fade-in-up px-4 md:px-0">
+        <!-- <div class="text-center mb-16">
+        <h3 id="collab-title" class="text-xl md:text-3xl font-bold text-navy mb-4"></h3>
+        <p id="collab-desc" class="text-navy/70 text-sm md:text-lg max-w-3xl mx-auto leading-relaxed font-medium">
+        </p>
+        </div> -->
+
+        <div id="collab-logos" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 items-center">
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-pastel-orange/30 py-16 md:py-20 px-6 relative overflow-hidden" style="display: none;">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+      <div
+        class="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16 relative z-10">
+        <div class="max-w-xl text-left">
+          <h2 class="text-[36px] md:text-[36px] font-bold text-navy mb-6 leading-tight">Become a Strategic Partner
+          </h2>
+          <p class="text-navy/80 text-base md:text-lg mb-8 md:mb-10 leading-relaxed font-medium">We are always
+            looking for visionary organizations to expand our ecosystem. Leverage our asset management expertise.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button
+              class="btn-primary bg-primary hover:bg-primary-hover text-white font-bold py-4 px-8 md:px-10 rounded-full transition-all flex items-center gap-3 shadow-lg shadow-primary/20 transform hover:-translate-y-1 text-sm">
+              <span>Partner with Us</span>
+              <span class="material-icons-outlined text-base">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-[480px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 md:border-8 border-white transform hover:scale-[1.02] transition-transform duration-500">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_xLkf1IrNH8o8BLAMq6Tnuv9cjhRjgnrVqKLzv7PKycFL-jvgreEY4FEKAMIw5Zms1mBp8pAMw7E-gsHTV-Z2Pdi7740EbenlsvIlvHEeYYtnIqQNgmuqP_F3H0HarcvPxu2r2DDFYPpDAjkUd-wlelcANrVufPgVWl-qGuT6HcUorXc2RtgJa8sn4pJCSiPif_hTY0I5_ZgxzppxZSuAPRb4VXMoTuBzO2fz5bpjNOJD5ar7w6KisnT8YSOxUBN-ZSdjUGIo_rY"
+            alt="Partnership meeting" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="py-16 bg-white overflow-hidden">
+    <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+      <div class="text-center mb-12 space-y-4">
+        <h2 class="text-[36px] md:text-[36px] font-bold text-navy tracking-tight">TruGenie Product Stack</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base font-medium">Transforming real estate through
+          intelligent automation and real-time insights.</p>
+      </div>
+
+      <div class="relative max-w-[1100px] mx-auto group" id="product-stack">
+        <div
+          class="rounded-[2.5rem] overflow-hidden aspect-[16/9] md:aspect-[21/9] relative border border-gray-100 bg-navy shadow-lg shadow-navy/5">
+          <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-10" data-slide="0">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2301"
+              alt="Intelligent Diagnostic Tool for Assets" class="w-full h-full object-cover" />
+            <div
+              class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-navy via-navy/60 to-transparent pointer-events-none">
+            </div>
+            <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
+              <div class="flex items-center justify-between mb-4 md:mb-6">
+                <div
+                  class="bg-primary px-6 md:px-8 py-2 md:py-2.5 rounded-full shadow-lg transform transition-all duration-700">
+                  <span class="text-white text-sm md:text-lg font-bold tracking-tight">TruGenie.AI</span>
+                </div>
+                <button
+                  class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"><span
+                    class="material-icons-outlined text-lg md:text-xl leading-none">arrow_forward</span></button>
+              </div>
+              <div class="transition-all duration-1000 translate-y-0 opacity-100">
+                <h3 class="text-[20px] md:text-[36px] font-bold text-white tracking-tight max-w-2xl leading-tight mb-2">
+                  Intelligent Diagnostic Tool for Assets</h3>
+                <p class="text-white/70 text-xs md:text-sm font-medium max-w-xl hidden sm:block">AI-powered engine
+                  monitoring real estate health and operational costs automatically.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0" data-slide="1">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2301"
+              alt="Automated Facility Management Suite" class="w-full h-full object-cover" />
+            <div
+              class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-navy via-navy/60 to-transparent pointer-events-none">
+            </div>
+            <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
+              <div class="flex items-center justify-between mb-4 md:mb-6">
+                <div
+                  class="bg-primary px-6 md:px-8 py-2 md:py-2.5 rounded-full shadow-lg transform transition-all duration-700">
+                  <span class="text-white text-sm md:text-lg font-bold tracking-tight">SmartOps</span>
+                </div>
+                <button
+                  class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"><span
+                    class="material-icons-outlined text-lg md:text-xl leading-none">arrow_forward</span></button>
+              </div>
+              <div class="transition-all duration-1000 translate-y-6 opacity-0">
+                <h3 class="text-[20px] md:text-[36px] font-bold text-white tracking-tight max-w-2xl leading-tight mb-2">
+                  Automated Facility Management Suite</h3>
+                <p class="text-white/70 text-xs md:text-sm font-medium max-w-xl hidden sm:block">Streamline building
+                  operations with real-time IoT integration and digital twins.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0" data-slide="2">
+            <img src="https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=2340"
+              alt="Real-time ROI Performance Analytics" class="w-full h-full object-cover" />
+            <div
+              class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-navy via-navy/60 to-transparent pointer-events-none">
+            </div>
+            <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
+              <div class="flex items-center justify-between mb-4 md:mb-6">
+                <div
+                  class="bg-primary px-6 md:px-8 py-2 md:py-2.5 rounded-full shadow-lg transform transition-all duration-700">
+                  <span class="text-white text-sm md:text-lg font-bold tracking-tight">FinanceHub</span>
+                </div>
+                <button
+                  class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"><span
+                    class="material-icons-outlined text-lg md:text-xl leading-none">arrow_forward</span></button>
+              </div>
+              <div class="transition-all duration-1000 translate-y-6 opacity-0">
+                <h3 class="text-[20px] md:text-[36px] font-bold text-white tracking-tight max-w-2xl leading-tight mb-2">
+                  Real-time ROI Performance Analytics</h3>
+                <p class="text-white/70 text-xs md:text-sm font-medium max-w-xl hidden sm:block">Unparalleled
+                  visibility into cash flows and investment performance dashboards.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-0" data-slide="3">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2670"
+              alt="Strategic Procurement Intelligence" class="w-full h-full object-cover" />
+            <div
+              class="absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-navy via-navy/60 to-transparent pointer-events-none">
+            </div>
+            <div class="absolute inset-0 p-6 md:p-10 flex flex-col justify-end">
+              <div class="flex items-center justify-between mb-4 md:mb-6">
+                <div
+                  class="bg-primary px-6 md:px-8 py-2 md:py-2.5 rounded-full shadow-lg transform transition-all duration-700">
+                  <span class="text-white text-sm md:text-lg font-bold tracking-tight">SupplyGenie</span>
+                </div>
+                <button
+                  class="w-10 h-10 md:w-12 md:h-12 bg-primary text-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"><span
+                    class="material-icons-outlined text-lg md:text-xl leading-none">arrow_forward</span></button>
+              </div>
+              <div class="transition-all duration-1000 translate-y-6 opacity-0">
+                <h3 class="text-[20px] md:text-[36px] font-bold text-white tracking-tight max-w-2xl leading-tight mb-2">
+                  Strategic Procurement Intelligence</h3>
+                <p class="text-white/70 text-xs md:text-sm font-medium max-w-xl hidden sm:block">Transform supply
+                  chains with transparent vendor management and predictive sourcing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="product-prev"
+          class="hidden md:flex absolute -left-16 top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-white border border-gray-100 items-center justify-center text-navy hover:bg-primary hover:text-white transition-all shadow-md">
+          <span class="material-icons-outlined">arrow_back</span>
+        </button>
+
+        <button id="product-next"
+          class="hidden md:flex absolute -right-16 top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full bg-white border border-gray-100 items-center justify-center text-navy hover:bg-primary hover:text-white transition-all shadow-md">
+          <span class="material-icons-outlined">arrow_forward</span>
+        </button>
+
+        <div class="mt-8 flex justify-center items-center gap-2" id="product-dots">
+          <button class="h-1.5 rounded-full transition-all duration-500 w-8 bg-primary" data-dot="0"
+            aria-label="Go to slide 1"></button>
+          <button class="h-1.5 rounded-full transition-all duration-500 w-2 bg-navy/10" data-dot="1"
+            aria-label="Go to slide 2"></button>
+          <button class="h-1.5 rounded-full transition-all duration-500 w-2 bg-navy/10" data-dot="2"
+            aria-label="Go to slide 3"></button>
+          <button class="h-1.5 rounded-full transition-all duration-500 w-2 bg-navy/10" data-dot="3"
+            aria-label="Go to slide 4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-16 bg-white overflow-hidden" id="services">
+    <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+      <div class="w-full text-center mb-16 space-y-4">
+        <h2 class="text-[36px] md:text-[36px] font-bold text-navy leading-tight tracking-tight">TruGenie -
+          Real Estate Intelligence Platform</h2>
+        <!-- <h3 class="text-xl md:text-2xl font-bold text-primary">Built for Decision-Makers</h3> -->
+        <p class="text-lg text-navy/60 leading-relaxed font-medium max-w-3xl mx-auto">TruGenie transforms raw
+          project data into actionable insights, helping you see issues before they become problems.</p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-12 items-stretch">
+        <div class="flex-1 flex flex-col justify-between space-y-4 order-2 lg:order-1">
+          <div class="space-y-3" id="services-list"></div>
+
+          <div class="pt-6">
+            <button
+              class="btn-primary bg-primary hover:bg-primary-hover text-white font-bold py-5 px-10 rounded-full transition-all flex items-center justify-center gap-3 shadow-xl shadow-primary/20 transform hover:-translate-y-1 w-full sm:w-auto">
+              <span>Book a TruGenie Demo</span>
+              <span class="material-icons-outlined">calendar_today</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex-[1.3] order-1 lg:order-2">
+          <div class="relative h-full w-full rounded-[3rem] overflow-hidden shadow-2xl min-h-[500px]"
+            id="services-visual">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent pointer-events-none">
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 z-20 overflow-hidden" id="services-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+      <div class="text-center mb-16">
+        <h2 class="text-[36px] font-bold text-navy tracking-tight">Who We Work With</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div
+          class="bg-white p-8 rounded-[2rem] border border-pastel-navy hover:border-primary/20 transition-all duration-300 text-center group cursor-default">
+          <div
+            class="w-12 h-12 bg-pastel-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors border border-primary/5">
+            <span class="material-icons-outlined text-primary group-hover:text-white transition-colors">domain</span>
+          </div>
+          <h5 class="font-bold mb-4 text-navy text-sm lg:text-base tracking-tight">Asset Owners &amp; REITs</h5>
+          <p class="text-[11px] text-gray-500 leading-relaxed font-medium">Enhancing performance, uptime, and
+            portfolio value through data.</p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-[2rem] border border-pastel-navy hover:border-primary/20 transition-all duration-300 text-center group cursor-default">
+          <div
+            class="w-12 h-12 bg-pastel-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors border border-primary/5">
+            <span
+              class="material-icons-outlined text-primary group-hover:text-white transition-colors">account_balance</span>
+          </div>
+          <h5 class="font-bold mb-4 text-navy text-sm lg:text-base tracking-tight">Lenders &amp; Investors</h5>
+          <p class="text-[11px] text-gray-500 leading-relaxed font-medium">Ensuring bankability, risk control, and
+            ROI through diligence.</p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-[2rem] border border-pastel-navy hover:border-primary/20 transition-all duration-300 text-center group cursor-default">
+          <div
+            class="w-12 h-12 bg-pastel-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors border border-primary/5">
+            <span
+              class="material-icons-outlined text-primary group-hover:text-white transition-colors">engineering</span>
+          </div>
+          <h5 class="font-bold mb-4 text-navy text-sm lg:text-base tracking-tight">Developers &amp; EPCs</h5>
+          <p class="text-[11px] text-gray-500 leading-relaxed font-medium">Supporting project delivery through PMO
+            and procurement.</p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-[2rem] border border-pastel-navy hover:border-primary/20 transition-all duration-300 text-center group cursor-default">
+          <div
+            class="w-12 h-12 bg-pastel-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors border border-primary/5">
+            <span
+              class="material-icons-outlined text-primary group-hover:text-white transition-colors">settings_suggest</span>
+          </div>
+          <h5 class="font-bold mb-4 text-navy text-sm lg:text-base tracking-tight">O&amp;M Contractors</h5>
+          <p class="text-[11px] text-gray-500 leading-relaxed font-medium">Enabling better scheduling, automation,
+            and asset insights.</p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-[2rem] border border-pastel-navy hover:border-primary/20 transition-all duration-300 text-center group cursor-default">
+          <div
+            class="w-12 h-12 bg-pastel-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors border border-primary/5">
+            <span class="material-icons-outlined text-primary group-hover:text-white transition-colors">hub</span>
+          </div>
+          <h5 class="font-bold mb-4 text-navy text-sm lg:text-base tracking-tight">OEMs &amp; Suppliers</h5>
+          <p class="text-[11px] text-gray-500 leading-relaxed font-medium">Streamlining procurement, compliance, and
+            logistics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-50 relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none opacity-[0.03]"
+      style="background-image: linear-gradient(to right, #001D56 1px, transparent 1px), linear-gradient(to bottom, #001D56 1px, transparent 1px); background-size: 60px 60px">
+    </div>
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#f9fafb_100%)] pointer-events-none opacity-80">
+    </div>
+
+    <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+      <h2 class="text-[36px] font-bold text-navy leading-[1.1] mb-8 tracking-tight">Ready to bring clarity and
+        control <br class="hidden lg:block" />to your real estate assets?</h2>
+      <p class="text-lg md:text-xl text-navy/60 font-medium max-w-2xl mx-auto mb-14 leading-relaxed">Connect with
+        our expert consultants today and discover how our platform can elevate your asset management strategy.</p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+        <button
+          class="btn-primary w-full sm:w-auto bg-primary hover:bg-primary-hover text-white font-bold text-xs md:text-sm tracking-[0.15em] uppercase px-10 py-5 transition-all hover:-translate-y-1 shadow-xl shadow-primary/20 rounded-full">Request
+          a Demo</button>
+        <button
+          class="btn-secondary w-full sm:w-auto bg-transparent border-2 border-navy text-navy hover:bg-navy hover:text-white font-bold text-xs md:text-sm tracking-[0.15em] uppercase px-10 py-5 transition-all hover:-translate-y-1 rounded-full">Talk
+          to Services</button>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="bg-[#000B23] text-white pt-16 pb-8 border-t border-white/5 font-sans">
+    <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-8 mb-20">
+        <div class="lg:col-span-2 space-y-8 pr-8">
+          <div class="flex items-center">
+            <img src="https://truboardpartners.com/assests/img/trugenie.png" alt="TruGenie Logo"
+              class="h-10 w-auto object-contain brightness-0 invert" />
+          </div>
+
+          <p class="text-gray-400 text-sm leading-relaxed max-w-sm">Technology-led real estate asset intelligence and
+            execution partner. Transforming how India's leading stakeholders manage real estate investments.</p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="material-icons-outlined text-primary text-lg mt-0.5">place</span>
+              <span>Mumbai, Maharashtra, India</span>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-gray-300">
+              <span class="material-icons-outlined text-primary text-lg">email</span>
+              <a href="mailto:info@truboard.com" class="hover:text-white transition-colors">info@truboard.com</a>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-gray-300">
+              <span class="material-icons-outlined text-primary text-lg">phone</span>
+              <span>+91 22 XXXX XXXX</span>
+            </div>
+          </div>
+
+          <div class="flex gap-4 pt-4">
+            <a href="#"
+              class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-[#0077b5] transition-all duration-300 group"
+              aria-label="LinkedIn">
+              <svg class="w-5 h-5 fill-gray-400 group-hover:fill-white transition-colors" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 21.466.792 22.24 1.771 22.24h20.451C23.2 22.24 24 21.466 24 20.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-[#1877F2] transition-all duration-300 group"
+              aria-label="Facebook">
+              <svg class="w-5 h-5 fill-gray-400 group-hover:fill-white transition-colors" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.954 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-lg mb-6 text-white">Services</h4>
+          <ul class="space-y-4 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-primary transition-colors">Development &amp; Execution</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Asset Management</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Capital Oversight</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">TruGenie Platform</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-lg mb-6 text-white">Company</h4>
+          <ul class="space-y-4 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-primary transition-colors">About Us</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Leadership</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-lg mb-6 text-white">Resources</h4>
+          <ul class="space-y-4 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-primary transition-colors">Case Studies</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Insights</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Whitepapers</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Product Updates</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <div>&copy; 2026 TruBoard PropTech. All rights reserved.</div>
+        <div class="flex gap-8">
+          <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-white transition-colors">Legal</a>
+          <a href="#" class="hover:text-white transition-colors">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   </div>
 
   <script src="script.js"></script>
