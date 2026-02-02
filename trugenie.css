@@ -51,9 +51,11 @@ h2,
 h3,
 h4 {
   color: var(--navy);
-  font-weight: 700;
+  font-weight: 700 !important;
 }
-
+.tg-hero h1 {
+  line-height: 1.6;
+}
 h1 {
   font-size: 36px !important;
   line-height: 1.1;
@@ -178,6 +180,7 @@ h4 {
   border: none;
   border-radius: 999px;
   padding: 0.9rem 2.5rem;
+  min-height: 52px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
