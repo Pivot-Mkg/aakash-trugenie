@@ -55,8 +55,9 @@ h4 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 36px !important;
   line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 h1 span {
@@ -64,8 +65,9 @@ h1 span {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 36px !important;
   margin-bottom: 1rem;
+  letter-spacing: -0.02em;
 }
 
 h3 {
@@ -317,7 +319,7 @@ h4 {
   overflow: hidden;
   aspect-ratio: 3 / 2;
   border: 1px solid var(--line);
-  box-shadow: 0 12px 24px rgba(6, 26, 58, 0.1);
+  /* box-shadow: 0 12px 24px rgba(6, 26, 58, 0.1); */
   position: relative;
 }
 
@@ -587,8 +589,11 @@ h4 {
   place-items: center;
   font-size: 2rem;
   color: #ffb160;
-  background: rgba(255, 255, 255, 0.08);
+  background: #001d56;
+  box-shadow: 0 0 0 10px #001d56;
   animation: float 4s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
 }
 
 .tg-use-cases {

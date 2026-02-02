@@ -16,20 +16,7 @@
 
   const setNavScrolled = () => {
     if (!nav) return;
-    if (nav.dataset.staticNav === 'true') {
-      navLinks.forEach((link) => {
-        link.classList.remove('text-white');
-        link.classList.add('text-navy');
-      });
-      navIcons.forEach((icon) => {
-        icon.classList.remove('text-white');
-        icon.classList.add('text-navy');
-      });
-      if (navLogo && navLogo.dataset.logoLight) {
-        navLogo.src = navLogo.dataset.logoLight;
-      }
-      return;
-    }
+    const lightTheme = nav.dataset.navTheme === "light";
     if (window.scrollY > 20) {
       nav.classList.remove("bg-transparent", "border-transparent", "py-5");
       nav.classList.add(
@@ -60,15 +47,18 @@
         "shadow-md",
       );
       navLinks.forEach((link) => {
-        link.classList.add("text-white");
-        link.classList.remove("text-navy");
+        link.classList.toggle("text-white", !lightTheme);
+        link.classList.toggle("text-navy", lightTheme);
       });
       navIcons.forEach((icon) => {
-        icon.classList.add("text-white");
-        icon.classList.remove("text-navy");
+        icon.classList.toggle("text-white", !lightTheme);
+        icon.classList.toggle("text-navy", lightTheme);
       });
-      if (navLogo && navLogo.dataset.logoDark) {
+      if (navLogo && navLogo.dataset.logoDark && !lightTheme) {
         navLogo.src = navLogo.dataset.logoDark;
+      }
+      if (navLogo && navLogo.dataset.logoLight && lightTheme) {
+        navLogo.src = navLogo.dataset.logoLight;
       }
     }
   };
