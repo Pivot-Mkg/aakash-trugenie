@@ -79,7 +79,7 @@ h4 {
 }
 
 .tg-lead {
-  font-size: 1rem;
+  font-size: 20px;
   color: var(--muted);
   max-width: 900px;
   margin: 0 auto;
@@ -87,6 +87,7 @@ h4 {
 
 .tg-muted {
   color: var(--muted);
+  font-size: 20px;
 }
 
 .tg-muted--light {
@@ -149,6 +150,7 @@ h4 {
 .tg-hero__content h1,
 .tg-hero__content p {
   text-align: left;
+  line-height: 1.6;
 }
 
 .tg-eyebrow {
@@ -247,14 +249,14 @@ h4 {
 }
 
 .tg-platform__copy {
-  font-size: 1rem;
+  font-size: 20px;
   color: var(--muted);
   max-width: 360px;
 }
 
 .tg-platform__copy span {
   display: block;
-  font-size: 0.9rem;
+  font-size: 20px;
   color: rgba(6, 26, 58, 0.45);
   margin-top: 0.5rem;
 }
@@ -360,6 +362,7 @@ h4 {
 
 .tg-capability__content p {
   color: rgba(255, 255, 255, 0.75);
+  font-size: 20px;
 }
 
 .tg-modules {
@@ -435,6 +438,10 @@ h4 {
   padding-bottom: 1.5rem;
 }
 
+.tg-module__header h3 {
+  font-size: 1.5rem;
+}
+
 .tg-module__features {
   display: flex;
   flex-direction: column;
@@ -507,7 +514,7 @@ h4 {
 .tg-feature__body p {
   padding: 1.2rem 1.5rem 1.6rem;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 20px;
 }
 
 .tg-how {
@@ -578,6 +585,7 @@ h4 {
 
 .tg-step p {
   color: rgba(255, 255, 255, 0.82);
+  font-size: 20px;
 }
 
 .tg-step__icon {
@@ -680,6 +688,7 @@ h4 {
 
 .tg-engagement__content p {
   color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
 }
 
 .tg-pill {
@@ -735,7 +744,7 @@ h4 {
 
 .tg-team__card p {
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 20px;
 }
 
 .tg-team__linkedin {
