@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TruGenie Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="trugenie.css" />
+</head>
+
+<body>
+    <nav id="site-nav" data-nav-theme="light"
+        class="fixed top-0 w-full z-50 transition-all duration-300 border-b bg-transparent border-transparent py-5">
+        <div class="max-w-[1600px] mx-auto px-6 lg:px-12 flex items-center justify-between h-14">
+            <div class="flex items-center cursor-pointer">
+                <img src="https://truboardpartners.com/assests/img/trugenie.png"
+                    data-logo-light="https://truboardpartners.com/assests/img/trugenie.png"
+                    alt="TruGenie Logo"
+                    class="h-12 w-auto object-contain" />
+            </div>
+
+            <div class="hidden lg:flex items-center justify-end flex-1 ml-12">
+                <div class="flex items-center space-x-6 xl:space-x-8 mr-8">
+                    <a href="#"
+                        class="nav-link text-navy hover:text-primary transition-colors text-[13px] font-bold whitespace-nowrap tracking-wide">Home</a>
+                    <a href="#"
+                        class="nav-link text-navy hover:text-primary transition-colors text-[13px] font-bold whitespace-nowrap tracking-wide">Services</a>
+                    <a href="#"
+                        class="nav-link text-navy hover:text-primary transition-colors text-[13px] font-bold whitespace-nowrap tracking-wide">TruGenie</a>
+                    <a href="#"
+                        class="nav-link text-navy hover:text-primary transition-colors text-[13px] font-bold whitespace-nowrap tracking-wide">Resources</a>
+                    <a href="#"
+                        class="nav-link text-navy hover:text-primary transition-colors text-[13px] font-bold whitespace-nowrap tracking-wide">Property
+                        AI</a>
+                    <a href="#"
+                        class="nav-link text-navy hover:text-primary transition-colors text-[13px] font-bold whitespace-nowrap tracking-wide">Construction
+                        AI</a>
+                </div>
+
+                <div id="desktop-menu" class="relative py-4">
+                    <button class="text-navy hover:text-primary transition-colors flex items-center justify-center outline-none"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="nav-icon material-icons-outlined text-3xl text-navy">menu</span>
+                    </button>
+
+                    <div id="desktop-menu-panel"
+                        class="absolute right-0 top-full w-56 bg-white border border-gray-100 rounded-2xl shadow-2xl p-2 transform transition-all duration-300 origin-top-right opacity-0 scale-95 -translate-y-4 invisible">
+                        <div class="flex flex-col">
+                            <a href="#"
+                                class="px-6 py-4 text-navy hover:bg-gray-50 hover:text-primary rounded-xl transition-colors text-sm font-bold tracking-wide">About
+                                Us</a>
+                            <a href="#"
+                                class="px-6 py-4 text-navy hover:bg-gray-50 hover:text-primary rounded-xl transition-colors text-sm font-bold tracking-wide">Careers</a>
+                            <a href="#"
+                                class="px-6 py-4 text-navy hover:bg-gray-50 hover:text-primary rounded-xl transition-colors text-sm font-bold tracking-wide">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="mobile-toggle" class="lg:hidden mobile-toggle text-navy transition-transform active:scale-90"
+                aria-expanded="false">
+                <span id="mobile-toggle-icon" class="nav-icon material-icons-outlined text-3xl text-navy">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu"
+        class="fixed top-14 right-4 z-[60] w-[calc(100%-32px)] max-w-[340px] transition-all duration-300 transform lg:hidden translate-y-0 opacity-0 scale-95 pointer-events-none">
+        <div class="bg-[#003B5C] border border-white/20 rounded-[1.5rem] shadow-2xl overflow-hidden p-10">
+            <div class="flex flex-col items-end space-y-7">
+                <a href="#"
+                    class="text-right text-white text-[17px] font-bold tracking-tight hover:text-primary transition-all">Home</a>
+                <a href="#"
+                    class="text-right text-white text-[17px] font-bold tracking-tight hover:text-primary transition-all">Services</a>
+                <a href="#"
+                    class="text-right text-white text-[17px] font-bold tracking-tight hover:text-primary transition-all">TruGenie</a>
+                <a href="#"
+                    class="text-right text-white text-[17px] font-bold tracking-tight hover:text-primary transition-all">Resources</a>
+                <a href="#"
+                    class="text-right text-white text-[17px] font-bold tracking-tight hover:text-primary transition-all">Property
+                    AI</a>
+                <a href="#"
+                    class="text-right text-white text-[17px] font-bold tracking-tight hover:text-primary transition-all">Construction
+                    AI</a>
+                <a href="#"
+                    class="text-right text-white text-[17px] font-bold tracking-tight hover:text-primary transition-all">About
+                    Us</a>
+                <a href="#"
+                    class="text-right text-white text-[17px] font-bold tracking-tight hover:text-primary transition-all">Careers</a>
+                <a href="#"
+                    class="text-right text-white text-[17px] font-bold tracking-tight hover:text-primary transition-all">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="tg-page">
+        <section class="tg-hero">
+            <div class="tg-hero__bg">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2301"
+                    alt="Background" />
+                <div class="tg-hero__overlay"></div>
+            </div>
+            <div class="tg-container tg-hero__content">
+                <div class="tg-eyebrow">TruGenie Platform</div>
+                <h1>
+                    Real Estate Intelligence.<br />
+                    <span>Delivered in Real Time.</span>
+                </h1>
+                <p>
+                    TruGenie is an AI-enabled real estate intelligence platform that brings
+                    construction, sales, cashflows, and governance onto a single operating
+                    layer.
+                </p>
+                <div class="tg-hero__actions">
+                    <button class="tg-btn tg-btn--primary">Start Conversation</button>
+                    <!-- <button class="tg-btn tg-btn--ghost">Watch Video</button> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="tg-section tg-overview">
+            <div class="tg-container tg-center">
+                <h2>TruGenie Overview</h2>
+                <p class="tg-lead">
+                    TruGenie is an AI-powered real estate intelligence platform that unifies
+                    data, analytics, and governance across the asset lifecycle, transforming
+                    disconnected data into actionable insights for developers, lenders, and
+                    investors.
+                </p>
+            </div>
+        </section>
+
+        <section class="tg-section tg-platform">
+            <div class="tg-container tg-platform__grid">
+                <div class="tg-platform__intro">
+                    <h2>
+                        Platform <br />
+                        Capabilities
+                    </h2>
+                    <div class="tg-divider"></div>
+                    <p class="tg-platform__copy">
+                        Unified Asset Intelligence. <br />
+                        <span>
+                            Seamlessly integrated modules designed to elevate your asset
+                            management strategy.
+                        </span>
+                    </p>
+                    <div class="tg-platform__nav tg-desktop-only">
+                        <button class="tg-icon-btn" id="cap-left" aria-label="Scroll Left">
+                            <span class="material-icons-outlined">chevron_left</span>
+                        </button>
+                        <button class="tg-icon-btn tg-icon-btn--primary" id="cap-right" aria-label="Scroll Right">
+                            <span class="material-icons-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tg-platform__carousel">
+                    <div class="tg-capabilities no-scrollbar" id="capabilities"></div>
+                    <div class="tg-platform__nav tg-mobile-only">
+                        <button class="tg-icon-btn" id="cap-left-mobile" aria-label="Scroll Left">
+                            <span class="material-icons-outlined">chevron_left</span>
+                        </button>
+                        <button class="tg-icon-btn tg-icon-btn--primary" id="cap-right-mobile"
+                            aria-label="Scroll Right">
+                            <span class="material-icons-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tg-section tg-modules">
+            <div class="tg-container">
+                <div class="tg-center tg-section__heading">
+                    <h2>Product Stack</h2>
+                    <p class="tg-muted">
+                        Explore the TruGenie modules designed for complete asset control.
+                    </p>
+                </div>
+                <div class="tg-tabs" id="module-tabs"></div>
+                <div class="tg-module">
+                    <div class="tg-module__image" id="module-image"></div>
+                    <div class="tg-module__content">
+                        <div class="tg-module__header">
+                            <h3 id="module-title"></h3>
+                            <button class="tg-btn tg-btn--primary tg-btn--small">
+                                Start Conversation
+                            </button>
+                        </div>
+                        <div class="tg-module__features" id="module-features"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tg-section tg-how">
+            <div class="tg-container">
+                <div class="tg-center tg-section__heading">
+                    <h2>How TruGenie Works</h2>
+                    <p class="tg-muted tg-muted--light">
+                        Data-In ? Insights-Out ? Action-Driven Control
+                    </p>
+                </div>
+                <div class="tg-steps" id="steps"></div>
+            </div>
+        </section>
+
+        <section class="tg-section">
+            <div class="tg-container">
+                <div class="tg-center tg-section__heading">
+                    <h2>Use Cases</h2>
+                </div>
+                <div class="tg-use-cases">
+                    <article class="tg-card tg-card--indigo">
+                        <h3>Developers</h3>
+                        <p>Deliver projects with discipline, transparency, and credibility.</p>
+                    </article>
+                    <article class="tg-card tg-card--pink">
+                        <h3>Lenders</h3>
+                        <p>Monitor exposure, enforce covenants, and reduce credit risk.</p>
+                    </article>
+                    <article class="tg-card tg-card--green">
+                        <h3>Funds & Investors</h3>
+                        <p>Track performance, manage risk, and protect capital across portfolios.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="tg-section tg-engagement">
+            <div class="tg-container">
+                <div class="tg-center tg-section__heading">
+                    <h2>Engagement Models</h2>
+                </div>
+                <div class="tg-engagement__grid">
+                    <article class="tg-engagement__card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=1200"
+                            alt="SaaS Platform" />
+                        <div class="tg-engagement__overlay"></div>
+                        <div class="tg-engagement__content">
+                            <span class="tg-pill">Model 01</span>
+                            <h3>SaaS Only</h3>
+                            <p>
+                                SaaS deployment for internal teams seeking real-time intelligence
+                                and control.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="tg-engagement__card">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200"
+                            alt="Advisory Services" />
+                        <div class="tg-engagement__overlay"></div>
+                        <div class="tg-engagement__content">
+                            <span class="tg-pill">Model 02</span>
+                            <h3>SaaS + TruBoard Services</h3>
+                            <p>
+                                Hybrid model for complex assets. Technology backed by real-world
+                                execution expertise.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="tg-section tg-team">
+            <div class="tg-container">
+                <div class="tg-center tg-section__heading">
+                    <h2>TruGenie Team</h2>
+                </div>
+                <div class="tg-tabs" id="team-tabs"></div>
+                <div class="tg-team__list" id="team-list"></div>
+            </div>
+        </section>
+
+        <section class="tg-section tg-cta">
+            <div class="tg-container tg-center">
+                <h2>See TruGenie in Action</h2>
+                <p class="tg-lead tg-muted">Get clarity. Get control. Get ahead of risk.</p>
+                <div class="tg-cta__actions">
+                    <button class="tg-btn tg-btn--primary">Book a Live Demo</button>
+                    <button class="tg-btn tg-btn--ghost">Request Pilot</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-[#000B23] text-white pt-16 pb-8 border-t border-white/5 font-sans">
+        <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-8 mb-20">
+                <div class="lg:col-span-2 space-y-8 pr-8">
+                    <div class="flex items-center">
+                        <img src="https://truboardpartners.com/assests/img/trugenie.png" alt="TruGenie Logo"
+                            class="h-10 w-auto object-contain brightness-0 invert" />
+                    </div>
+
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-sm">Technology-led real estate asset intelligence and
+                        execution partner. Transforming how India's leading stakeholders manage real estate investments.</p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3 text-sm text-gray-300">
+                            <span class="material-icons-outlined text-primary text-lg mt-0.5">place</span>
+                            <span>Mumbai, Maharashtra, India</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="material-icons-outlined text-primary text-lg">email</span>
+                            <a href="mailto:info@truboard.com" class="hover:text-white transition-colors">info@truboard.com</a>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-gray-300">
+                            <span class="material-icons-outlined text-primary text-lg">phone</span>
+                            <span>+91 22 XXXX XXXX</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 pt-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-[#0077b5] transition-all duration-300 group"
+                            aria-label="LinkedIn">
+                            <svg class="w-5 h-5 fill-gray-400 group-hover:fill-white transition-colors" viewBox="0 0 24 24"
+                                aria-hidden="true">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 21.466.792 22.24 1.771 22.24h20.451C23.2 22.24 24 21.466 24 20.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-[#1877F2] transition-all duration-300 group"
+                            aria-label="Facebook">
+                            <svg class="w-5 h-5 fill-gray-400 group-hover:fill-white transition-colors" viewBox="0 0 24 24"
+                                aria-hidden="true">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.954 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-white">Services</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition-colors">Development &amp; Execution</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Asset Management</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Capital Oversight</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">TruGenie Platform</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-white">Company</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Leadership</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-white">Resources</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition-colors">Case Studies</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Insights</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Whitepapers</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Product Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                <div>&copy; 2026 TruBoard PropTech. All rights reserved.</div>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Legal</a>
+                    <a href="#" class="hover:text-white transition-colors">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        const capabilities = [
+            {
+                title: "Unified Asset Intelligence",
+                subtext: "One platform for construction, sales, finance, and governance.",
+                image:
+                    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000",
+            },
+            {
+                title: "Real-Time Dashboards",
+                subtext: "Live MIS views with role-based access for data visualization.",
+                image:
+                    "https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=1000",
+            },
+            {
+                title: "Workflow Automation",
+                subtext: "Streamlined approvals, escalations, and process efficiency.",
+                image:
+                    "https://images.unsplash.com/photo-1664575602276-acd073f104c1?auto=format&fit=crop&q=80&w=1000",
+            },
+            {
+                title: "Predictive & Exception Analytics",
+                subtext: "AI-driven early warning signals and risk prediction alerts.",
+                image:
+                    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000",
+            },
+        ];
+
+        const modules = [
+            {
+                title: "Construction Monitoring",
+                details: [
+                    {
+                        title: "Physical progress tracking vs plan",
+                        desc:
+                            "Monitor on-site activities in real-time and compare them against the baseline schedule to identify delays instantly using digital twin integration.",
+                        image:
+                            "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Cost-to-complete analysis",
+                        desc:
+                            "Dynamic financial forecasting that calculates remaining costs based on current commitments, inventory, and labor rates.",
+                        image:
+                            "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Real-time delay and overrun alerts",
+                        desc:
+                            "Automated early warning system that triggers notifications for schedule slippages and budget variances before they escalate.",
+                        image:
+                            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Material inventory & consumption",
+                        desc:
+                            "End-to-end digital tracking of material procurement, storage, and consumption to prevent leakage and pilferage.",
+                        image:
+                            "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200",
+                    },
+                ],
+            },
+            {
+                title: "Sales & Revenue",
+                details: [
+                    {
+                        title: "Sales velocity and absorption",
+                        desc:
+                            "Analyze unit sales rates across different periods and inventory types to adjust marketing strategies dynamically.",
+                        image:
+                            "https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Collection efficiency tracking",
+                        desc:
+                            "Track receivables against milestones in real-time, automating reminders and reducing days sales outstanding (DSO).",
+                        image:
+                            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Unit-level inventory analytics",
+                        desc:
+                            "Granular visibility into every unit's status�sold, booked, blocked, or available�to maximize inventory yield.",
+                        image:
+                            "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Dynamic pricing scenario modeling",
+                        desc:
+                            "Simulate revenue outcomes based on different pricing strategies and discount structures to maximize project ROI.",
+                        image:
+                            "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1200",
+                    },
+                ],
+            },
+            {
+                title: "Cashflow & Fund Flow",
+                details: [
+                    {
+                        title: "Inflow and outflow tracking",
+                        desc:
+                            "Detailed account-level monitoring of all financial movements to ensure funds are utilized as per the mandate.",
+                        image:
+                            "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Liquidity forecasting",
+                        desc:
+                            "Predictive runway analysis to ensure sufficient working capital for upcoming construction milestones.",
+                        image:
+                            "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Stress testing & scenario planning",
+                        desc:
+                            "Evaluate portfolio resilience against market shocks, interest rate changes, and sales slowdowns.",
+                        image:
+                            "https://images.unsplash.com/photo-1611974765270-ca1258634369?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Automated variance reporting",
+                        desc:
+                            "Instantly identify and report discrepancies between budgeted and actual cash flows for tighter financial control.",
+                        image:
+                            "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1200",
+                    },
+                ],
+            },
+            {
+                title: "NOC & Approvals",
+                details: [
+                    {
+                        title: "Configurable approval workflows",
+                        desc:
+                            "Design custom approval chains for NOCs and permits that mirror your internal governance structure.",
+                        image:
+                            "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Regulatory audit trails",
+                        desc:
+                            "Maintain an immutable digital record of all approvals, submissions, and document versions for compliance audits.",
+                        image:
+                            "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Digital document management",
+                        desc:
+                            "Secure, centralized repository for all project-related legal and regulatory documents with role-based access.",
+                        image:
+                            "https://images.unsplash.com/photo-1618044733300-9472054094ee?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Bottleneck alerts",
+                        desc:
+                            "Identify which approvals are stalled and who is responsible, reducing administrative delays.",
+                        image:
+                            "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=1200",
+                    },
+                ],
+            },
+            {
+                title: "Compliance & Risk",
+                details: [
+                    {
+                        title: "Loan covenant tracking",
+                        desc:
+                            "Real-time monitoring of key financial ratios (DSCR, LTV) to prevent technical defaults.",
+                        image:
+                            "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "RERA compliance monitoring",
+                        desc:
+                            "Automated checks against RERA regulations to ensure timely filings and protect against penalties.",
+                        image:
+                            "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Litigation risk visibility",
+                        desc:
+                            "Centralized dashboard for tracking legal cases and their potential impact on project timelines and costs.",
+                        image:
+                            "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Early warning signals (EWS)",
+                        desc:
+                            "AI-driven alerts for emerging risks based on leading indicators from operational and financial data.",
+                        image:
+                            "https://images.unsplash.com/photo-1551288049-bbda48658a7d?auto=format&fit=crop&q=80&w=1200",
+                    },
+                ],
+            },
+            {
+                title: "OPEX & Vendors",
+                details: [
+                    {
+                        title: "Expense approval chains",
+                        desc:
+                            "Digitized purchase order and invoice approval workflows to prevent unauthorized spending.",
+                        image:
+                            "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Vendor performance monitoring",
+                        desc:
+                            "Scorecard-based evaluation of vendors based on quality, timeliness, and cost-effectiveness.",
+                        image:
+                            "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Contract visibility",
+                        desc:
+                            "Centralized view of all vendor contracts with automated alerts for renewals and expiry dates.",
+                        image:
+                            "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200",
+                    },
+                    {
+                        title: "Procurement analytics",
+                        desc:
+                            "Analyze spending patterns to negotiate better rates and consolidate procurement across projects.",
+                        image:
+                            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
+                    },
+                ],
+            },
+        ];
+
+        const steps = [
+            {
+                title: "Data Ingestion",
+                desc: "Financial systems, ERPs, BIM, and CRM integrations.",
+                icon: "cloud_upload",
+            },
+            {
+                title: "Analytics & Intelligence",
+                desc: "Predictive models, anomaly detection, and scenario analysis.",
+                icon: "psychology",
+            },
+            {
+                title: "Insights Delivery",
+                desc: "Live dashboards, automated alerts, and MIS reporting.",
+                icon: "dashboard",
+            },
+            {
+                title: "Action & Control",
+                desc: "Workflow automation, approvals, and audit trails.",
+                icon: "gavel",
+            },
+        ];
+
+        const teamCategories = ["Product Leadership", "Head of Engineering"];
+
+        const teamData = [
+            [
+                {
+                    name: "Lorem Name",
+                    role: "Lorem Role",
+                    image:
+                        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=256",
+                    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+                },
+                {
+                    name: "Lorem Name",
+                    role: "Lorem Role",
+                    image:
+                        "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=256",
+                    bio: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+                },
+            ],
+            [
+                {
+                    name: "Lorem Name",
+                    role: "Lorem Role",
+                    image:
+                        "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=256",
+                    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+                },
+                {
+                    name: "Lorem Name",
+                    role: "Lorem Role",
+                    image:
+                        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=256",
+                    bio: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+                },
+            ],
+        ];
+
+        const capabilityWrapper = document.getElementById("capabilities");
+        const moduleTabs = document.getElementById("module-tabs");
+        const moduleTitle = document.getElementById("module-title");
+        const moduleImage = document.getElementById("module-image");
+        const moduleFeatures = document.getElementById("module-features");
+        const stepsWrapper = document.getElementById("steps");
+        const teamTabs = document.getElementById("team-tabs");
+        const teamList = document.getElementById("team-list");
+
+        let activeModule = 0;
+        let activeFeature = 0;
+        let activeTeam = 0;
+
+        function bindScrollButtons(leftId, rightId) {
+            const left = document.getElementById(leftId);
+            const right = document.getElementById(rightId);
+            if (!left || !right || !capabilityWrapper) return;
+
+            left.addEventListener("click", () => {
+                const amount = capabilityWrapper.clientWidth / 2;
+                capabilityWrapper.scrollBy({ left: -amount, behavior: "smooth" });
+            });
+
+            right.addEventListener("click", () => {
+                const amount = capabilityWrapper.clientWidth / 2;
+                capabilityWrapper.scrollBy({ left: amount, behavior: "smooth" });
+            });
+        }
+
+        function renderCapabilities() {
+            capabilityWrapper.innerHTML = "";
+            capabilities.forEach((item) => {
+                const card = document.createElement("div");
+                card.className = "tg-capability";
+                card.innerHTML = `
+      <div class="tg-capability__card">
+        <img src="${item.image}" alt="${item.title}" />
+        <div class="tg-capability__overlay"></div>
+        <div class="tg-capability__content">
+          <h3>${item.title}</h3>
+          <p>${item.subtext}</p>
+        </div>
+      </div>
+    `;
+                capabilityWrapper.appendChild(card);
+            });
+            const spacer = document.createElement("div");
+            spacer.style.minWidth = "8px";
+            capabilityWrapper.appendChild(spacer);
+        }
+
+        function renderModuleTabs() {
+            moduleTabs.innerHTML = "";
+            modules.forEach((module, index) => {
+                const button = document.createElement("button");
+                button.textContent = module.title;
+                button.classList.toggle("active", index === activeModule);
+                button.addEventListener("click", () => {
+                    activeModule = index;
+                    activeFeature = 0;
+                    renderModules();
+                    renderModuleTabs();
+                });
+                moduleTabs.appendChild(button);
+            });
+        }
+
+        function renderModules() {
+            const current = modules[activeModule];
+            moduleTitle.textContent = current.title;
+            const activeImage = current.details[activeFeature].image;
+            moduleImage.innerHTML = `<img src="${activeImage}" alt="${current.details[activeFeature].title}">`;
+
+            moduleFeatures.innerHTML = "";
+            current.details.forEach((feature, index) => {
+                const featureCard = document.createElement("div");
+                featureCard.className = `tg-feature ${index === activeFeature ? "active" : ""}`;
+                featureCard.innerHTML = `
+      <div class="tg-feature__head">
+        <h4>${feature.title}</h4>
+        <div class="tg-feature__icon">
+          <span class="material-icons-outlined">
+            ${index === activeFeature ? "keyboard_arrow_down" : "arrow_circle_right"}
+          </span>
+        </div>
+      </div>
+      <div class="tg-feature__body">
+        <p>${feature.desc}</p>
+      </div>
+    `;
+                featureCard.addEventListener("click", () => {
+                    activeFeature = index;
+                    renderModules();
+                });
+                moduleFeatures.appendChild(featureCard);
+            });
+        }
+
+        function renderSteps() {
+            stepsWrapper.innerHTML = "";
+            steps.forEach((step, index) => {
+                const item = document.createElement("div");
+                item.className = "tg-step";
+                item.style.animationDelay = `${index * 0.2}s`;
+                item.innerHTML = `
+      <div class="tg-step__icon" style="animation-delay:${index * 0.5}s">
+        <span class="material-icons-outlined">${step.icon}</span>
+      </div>
+      <h3>${step.title}</h3>
+      <p class="tg-muted tg-muted--light">${step.desc}</p>
+    `;
+                stepsWrapper.appendChild(item);
+            });
+        }
+
+        function renderTeamTabs() {
+            teamTabs.innerHTML = "";
+            teamCategories.forEach((category, index) => {
+                const button = document.createElement("button");
+                button.textContent = category;
+                button.classList.toggle("active", index === activeTeam);
+                button.addEventListener("click", () => {
+                    activeTeam = index;
+                    renderTeamTabs();
+                    renderTeam();
+                });
+                teamTabs.appendChild(button);
+            });
+        }
+
+        function renderTeam() {
+            teamList.innerHTML = "";
+            teamData[activeTeam].forEach((member) => {
+                const card = document.createElement("div");
+                card.className = "tg-team__card";
+                card.innerHTML = `
+      <a class="tg-team__linkedin" href="#" aria-label="LinkedIn">in</a>
+      <img src="${member.image}" alt="${member.name}" />
+      <div>
+        <h4>${member.name}, <span class="tg-muted">${member.role}</span></h4>
+        <p>${member.bio}</p>
+      </div>
+    `;
+                teamList.appendChild(card);
+            });
+        }
+
+        renderCapabilities();
+        bindScrollButtons("cap-left", "cap-right");
+        bindScrollButtons("cap-left-mobile", "cap-right-mobile");
+        renderModuleTabs();
+        renderModules();
+        renderSteps();
+        renderTeamTabs();
+        renderTeam();
+
+    </script>
+</body>
+
+</html>

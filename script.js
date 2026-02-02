@@ -16,6 +16,20 @@
 
   const setNavScrolled = () => {
     if (!nav) return;
+    if (nav.dataset.staticNav === 'true') {
+      navLinks.forEach((link) => {
+        link.classList.remove('text-white');
+        link.classList.add('text-navy');
+      });
+      navIcons.forEach((icon) => {
+        icon.classList.remove('text-white');
+        icon.classList.add('text-navy');
+      });
+      if (navLogo && navLogo.dataset.logoLight) {
+        navLogo.src = navLogo.dataset.logoLight;
+      }
+      return;
+    }
     if (window.scrollY > 20) {
       nav.classList.remove("bg-transparent", "border-transparent", "py-5");
       nav.classList.add(
